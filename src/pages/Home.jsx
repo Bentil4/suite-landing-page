@@ -1,6 +1,11 @@
 import React from 'react'
 import logo from '../assets/logo.svg'
 import './home.css'
+import Man_image from '../assets/image-jeremy-large@2x.png'
+import Pattern_curved2 from '../assets/pattern-curved-line-2.svg'
+import Facebook from '../assets/icon-facebook.svg'
+import Twitter from '../assets/icon-twitter.svg'
+import Instagram from '../assets/icon-instagram.svg'
 function Home() {
   return (
     <div className='container'>
@@ -26,12 +31,58 @@ function Home() {
                     
                     </div>
                     <div className="sup-sub-right">
-                        <div className="top">ds</div>
-                        <div className="middle">ds</div>
-                        <div className="down">ds</div>
+                        <div className="top">
+                            <h3>2K+</h3>
+                            <p>COMPANIES</p>
+                        </div>
+                        <div className="middle">
+                            <h3>8</h3>
+                            <p>LANGUAGES</p>
+                        </div>
+                        <div className="down">
+                            <h3>1.2M</h3>
+                            <p>LEADS</p>
+                        </div>
                     </div>
                 </div>
             </main>
+
+{/* Section */}
+            <section>
+                <div className="section">
+                    <div className="left-sec">
+                        <img src={Man_image} alt="" />
+                    </div>
+                    <div className="middle-sec">
+                        <img src={Pattern_curved2} alt="" />
+                    </div>
+                    <div className="right-sec">
+                        <div className="right-sec-1">
+                            <p>It just <b>works</b>.</p>
+                        </div>
+                        <div className="right-sec-2">“I really like how it is an all-in-one solution that handle many of the tasks that you would normally need separate tools to do the same job. This thing is a miracle worker.”</div>
+                        <div className="right-sec-3">
+                            <h5>JEREMY ROBINSON</h5>
+                            <p>CMO, FYLO</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+            <footer>
+                <div className="footer-bar">
+                    <div className="footer-1">
+                        <img src={logo} alt="" />
+                    </div>
+                    <div className="footer-2">Copyright - Suite</div>
+                    <div className="footer-3">
+                        <img src={Facebook} alt="" />
+                        <img src={Twitter} alt="" />
+                        <img src={Instagram} alt="" />
+                    </div>
+                </div>
+            </footer>
            
     </div>
   )
