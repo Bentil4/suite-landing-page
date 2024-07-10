@@ -1,197 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Epilogue;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Epilogue;
 }
 
-body{
-    width: 100%;
+body {
+  width: 100%;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-nav{
-    width: 90%;
+nav {
+  width: 90%;
+  height: 10vh;
 }
 
-
-
-nav{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
+nav {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0 8% 0;
 }
 
-.nav-bar{
-    width: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-bar {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-bar h3{
-    border: #172339 solid 1px;
-    border-radius: 5px;
-    padding: 0.9rem;
-    color: #172339;
+.nav-bar h3 {
+  border: #172339 solid 1px;
+  border-radius: 5px;
+  padding: 0.9rem;
+  color: #172339;
 }
 
-.nav-bar h3:hover{
-    background: #172339;
-    color: #FAF8F6;
+.nav-bar h3:hover {
+  background: #172339;
+  color: #faf8f6;
 }
-
 
 /* Main */
-main{
-    width: 90%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  width: 90%;
+  height: calc(100vh - 20vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10% 0;
 }
 
-.sup-sub{
-    width: 90%;
-    display: flex;
-    justify-content: center;
+.sup-sub {
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
-.sup-sub-left{
-    flex: 9;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    gap: 50px;
-    align-items: flex-start;
-    word-wrap: break-word;
+.sup-sub-left {
+  /* width: 100%; */
+  position: relative;
+  flex: 20;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 50px;
+  align-items: flex-start;
+  word-wrap: break-word;
+  z-index: 2;
 }
 
-.sup-sub-left .p-one{
-    font-size: 4rem;
-    width: 70%;
+.sup-sub-left .curved-line {
+  position: relative;
+  left: 44%;
+  margin: 0;
+  bottom: -8%;
 }
 
-
-.sup-sub-left .p-two{
-    width: 45%;
-    line-height: 35px;
-    font-size: 20px;
-    color: #49566D;
-    
+.sup-sub-left .p-one {
+  font-size: 4.4rem;
+  color: #172339;
 }
 
-.sup-sub-left .sub-btn{
-    background: #172339;
-    color: #FAF8F6;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+.sup-sub-left .p-two {
+  width: 60%;
+  line-height: 35px;
+  font-size: 20px;
+  color: #49566d;
 }
 
+.sup-sub-left .sub-btn {
+  background: #172339;
+  color: #faf8f6;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
 
-.sup-sub-left .sub-btn:hover{
-    background: linear-gradient(to bottom right, #CB30E3,#FFA84E);
-    cursor: pointer;
+.sup-sub-left .sub-btn:hover {
+  background: linear-gradient(to bottom right, #cb30e3, #ffa84e);
+  cursor: pointer;
+}
+
+/* Sup Middle */
+
+.sup-sub-middle {
+  flex: 1;
+  /* width: 50%; */
+  position: relative;
+  width: 30%;
+  height: 10px;
+  object-fit: cover;
+  left: -18%;
+  z-index: 0;
 }
 
 /* Sup Right */
 
-.sup-sub-right{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
+.sup-sub-right {
+  display: flex;
+  flex: 1;
+  /* width: 20%; */
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  z-index: 1;
+  right: 10%;
+  position: relative;
 }
 
-.sup-sub-right h3{
-    font-size: 1.5rem;
+.sup-sub-right h3 {
+  font-size: 2.5rem;
+  color: #172339;
 }
 
+.sup-sub-right p {
+  color: #49566d;
+}
 
 /* section */
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 50vi;
-    padding: 10% 0 10% 0;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 5% 0 5% 0;
 }
 
-
-.section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background: #172339;
-    color: #FAF8F6;
-    border-radius: 20px;
-    position: relative;
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background: #172339;
+  color: #faf8f6;
+  border-radius: 20px;
+  position: relative;
+  width: inherit;
+  height: 44vi;
 }
 
-.left-sec img{
-    height: 550px;
-    width: 400px;
-    object-fit: cover;
-    position: relative;
+.left-sec {
+  background: url("/src/assets/pattern-blur.svg");
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  width: 35%;
+  top: -5%;
+}
+
+.left-sec img {
+  width: 400px;
 }
 
 .right-sec {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 30%;
-    line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 33%;
+  line-height: 25px;
 }
 
-.right-sec .right-sec-1 p{
-    font-size: 3rem;
+.right-sec .right-sec-1 p {
+  font-size: 3rem;
 }
 
-.right-sec .right-sec-2{
-    font-size: 20px;
-    line-height: 35px;
+.right-sec .right-sec-2 {
+  font-size: 20px;
+  line-height: 35px;
 }
 
+.right-sec-3 h5 {
+  font-size: 1.1rem;
+}
+
+.right-sec-3 p {
+  letter-spacing: 3px;
+}
 
 /* Footer */
-footer{
-    width: 90%;
-    height: 5vi;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 5vi;
 }
 
-.footer-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer-bar {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-2{
-    color: #49566D;
-    font-size: 16px;
+.footer-2 {
+  color: #49566d;
+  font-size: 16px;
 }
 
-.footer-3 > img{
-    margin-right: 20px ;
-    cursor: pointer;
-    padding: 5px;
+.footer-3 > img {
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 5px;
 }
 
-.footer-3 img:hover{
-    filter: invert(29%) sepia(14%) saturate(748%) hue-rotate(170deg) brightness(94%) contrast(84%);
+.footer-3 img:hover {
+  filter: invert(29%) sepia(14%) saturate(748%) hue-rotate(170deg)
+    brightness(94%) contrast(84%);
 }
