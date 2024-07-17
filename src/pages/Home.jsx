@@ -9,6 +9,8 @@ import Instagram from "../assets/icon-instagram.svg";
 import BackgroundOne from "../assets/image-hero-portrait.png";
 import BackgroundTwo from "../assets/image-hero-portrait@2x.png";
 import Curved_line from "../assets/pattern-curved-line-1.svg";
+import BackgroundSma from "../assets/image-hero-landscape.png";
+import BackgroundBig from "../assets/image-hero-landscape@2x.png";
 
 function Home() {
   return (
@@ -17,7 +19,7 @@ function Home() {
       <nav>
         <div className="nav-bar">
           <img src={logo} alt="" />
-          <h3>Request Beta Access</h3>
+          <button className="nav-btn">Request Beta Access</button>
         </div>
       </nav>
 
@@ -40,7 +42,8 @@ function Home() {
           </div>
           <div className="sup-sub-middle">
             <div className="sup-mid">
-              <img src={BackgroundOne} alt="" />
+              <img src={BackgroundOne} alt="" className="bg-one" />
+              {/* <img src={BackgroundSma} alt="" className="bg-small" /> */}
             </div>
           </div>
           <div className="sup-sub-right">
@@ -64,7 +67,6 @@ function Home() {
       <section>
         <div className="section">
           <div className="left-sec">
-            {/* <img src={Pattern_Blur} alt="" className="blur" /> */}
             <img src={Man_image} alt="" className="man" />
           </div>
           <div className="middle-sec">
