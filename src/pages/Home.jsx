@@ -7,10 +7,7 @@ import Facebook from "../assets/icon-facebook.svg";
 import Twitter from "../assets/icon-twitter.svg";
 import Instagram from "../assets/icon-instagram.svg";
 import BackgroundOne from "../assets/image-hero-portrait.png";
-import BackgroundTwo from "../assets/image-hero-portrait@2x.png";
 import Curved_line from "../assets/pattern-curved-line-1.svg";
-import BackgroundSma from "../assets/image-hero-landscape.png";
-import BackgroundBig from "../assets/image-hero-landscape@2x.png";
 
 function Home() {
   return (

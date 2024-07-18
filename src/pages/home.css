@@ -9,6 +9,7 @@
 
 body {
   width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -142,13 +143,13 @@ section {
   align-items: center;
   width: 80%;
   height: 86vh;
-  background: #172339;
   padding: 5% 0 5% 0;
-  border-radius: 20px;
   z-index: 2;
 }
 
 .section {
+  border-radius: 20px;
+  background: #172339;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +240,7 @@ footer {
 
 /* Mobile View */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .container {
     display: flex;
   }
@@ -287,6 +288,7 @@ footer {
     font-size: 2.3em;
     width: 100%;
   }
+
   .sup-sub-left .p-two {
     font-size: 1.1em;
     width: 100%;
@@ -418,5 +420,99 @@ footer {
     justify-content: center;
     align-items: center;
     margin-right: 0px;
+  }
+}
+
+/* Tablet View */
+
+@media (min-width: 480px) and (max-width: 1199px) {
+  /* Main */
+  main {
+  }
+
+  .sup-sub {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  /* Sup Left */
+  .sup-sub-left .curved-line {
+    position: relative;
+    left: 57%;
+    bottom: -45px;
+  }
+  .sup-sub-left .curved-line img {
+    width: 190px;
+  }
+
+  .sup-sub-left .p-one {
+    font-size: 3.1em;
+    width: 120%;
+  }
+
+  .sup-sub-left .p-two {
+    font-size: 0.89em;
+    width: 80%;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  .sup-sub-right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Sup Middle */
+  .sup-sub-middle {
+    position: relative;
+    left: 0%;
+    top: 50%;
+  }
+
+  .sup-mid img {
+    width: 120%;
+    /* height: 50%; */
+  }
+
+  /* Sub Right */
+
+  .sup-sub-right {
+    margin-top: 4em;
+    gap: 100px;
+    text-align: center;
+  }
+
+  /* Section */
+
+  section {
+    border: gold solid 1px;
+    height: 180vh;
+    width: 100%;
+    margin-top: 10em;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+    border: white solid 1px;
+  }
+
+  .left-sec {
+    position: absolute;
+    top: 130%;
+  }
+
+  .right-sec {
+    width: 100%;
+    padding: 0 5% 0 5%;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    height: 50vi;
   }
 }
