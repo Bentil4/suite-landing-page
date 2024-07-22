@@ -322,11 +322,11 @@ footer {
   }
 
   .sup-sub-left .curved-line img {
-    width: 170px;
+    width: 130px;
   }
 
   .sup-sub-left .p-one {
-    font-size: 2.3em;
+    font-size: 2.6em;
     width: 100%;
   }
 
@@ -335,6 +335,7 @@ footer {
     width: 100%;
     text-align: justify;
     line-height: 20px;
+    line-height: 25px;
   }
 
   /* Main Middle */
@@ -459,6 +460,22 @@ footer {
     justify-content: center;
     align-items: center;
     margin-right: 0px;
+  }
+}
+
+/* Mobile View */
+
+@media (max-width: 375px) {
+  .sup-sub-left .p-one {
+    font-size: 2.3em;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .sup-sub-left .p-one {
+    font-size: 2em;
+    width: 100%;
   }
 }
 
